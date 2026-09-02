@@ -1,3 +1,8 @@
+---
+title: Platform-native solutions
+inclusion: manual
+---
+
 # Platform-Native Solutions
 
 The lazy senior dev's first question is always: *does the platform already do this?*
