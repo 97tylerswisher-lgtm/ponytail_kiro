@@ -2,8 +2,8 @@
 
 A trimmed fork of [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) for
 the Kiro IDE on a machine with no extension installs. The upstream ruleset is kept whole;
-everything that only serves other harnesses is removed. Upstream is `main`; this branch is
-`kiro`.
+everything that only serves other harnesses is removed. This repo's `main` is the trimmed
+tree; upstream history is retained beneath it.
 
 ## What is here
 
@@ -32,14 +32,12 @@ has a `.kiro/` folder. Pairs with the `agent-harness-foundation` repo.
 ## Updating from upstream
 
 ```powershell
+git remote add upstream https://github.com/DietrichGebert/ponytail.git
 git fetch upstream
-git checkout main
 git merge upstream/main
-git checkout kiro
-git merge main
 ```
 
-Resolve conflicts by keeping the deletions on this branch.
+Resolve conflicts by keeping the deletions in this tree.
 
 ## License
 
