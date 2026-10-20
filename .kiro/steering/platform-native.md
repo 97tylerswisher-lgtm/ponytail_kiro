@@ -84,7 +84,7 @@ Libraries people install that the runtime already ships.
 
 **Debounce one-liner** (no library):
 ```js
-// ponytail: 3 lines beats a dependency
+// shortcut: one timer shared by every debounced function, move `t` inside when you debounce two things
 let t;
 const debounce = (fn, ms) => (...args) => { clearTimeout(t); t = setTimeout(() => fn(...args), ms); };
 ```
